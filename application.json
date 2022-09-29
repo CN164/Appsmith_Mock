@@ -1,0 +1,56 @@
+{
+  "pages": [
+    {
+      "id": "PageListVersion",
+      "isDefault": false
+    },
+    {
+      "id": " TEST-EditPage",
+      "isDefault": false
+    },
+    {
+      "id": "PageLicense",
+      "isDefault": true
+    },
+    {
+      "id": "PageEdit_Go_Dome",
+      "isDefault": false
+    },
+    {
+      "id": "PageHardware",
+      "isDefault": false
+    },
+    {
+      "id": "PageTab_ViewVersion",
+      "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "PageEdite",
+      "isDefault": false
+    },
+    {
+      "id": "PageSoftware",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "63282acf93ead37f152bc1d2",
+  "color": "#D9E7FF",
+  "icon": "steam-bowl",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

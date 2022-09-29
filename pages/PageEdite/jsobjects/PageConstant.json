@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "PageConstant",
+    "pageId": "PageEdite",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\terrorMessage: {\n\t\t\"Error\": \"Not Found\"\n\t}\n}",
+    "variables": [
+      {
+        "name": "errorMessage",
+        "value": "{\n  \"Error\": \"Not Found\"\n}"
+      }
+    ]
+  },
+  "id": "PageEdite_PageConstant",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2c6"
+}

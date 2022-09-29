@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_storeValue",
+    "pageId": "PageLicense",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tUpdateStoreHardware: async (datas) => {\n\t\tlet base64 = datas[0]?.data.split(',')\n\t\tstoreValue('imgBB', base64[1])\n\t\tawait API_Post_img.run()\n\t\tstoreValue('imgBB_URL', await API_Post_img.data.data.url)\n\t},\n\tUpdateStore: async (datas) => {\n\t\tlet base64 = datas[0]?.data.split(',')\n\t\tstoreValue('filePdf', base64[1])\n\t\tstoreValue('typeFile', datas[0]?.type)\n\t\tstoreValue('fileName', datas[0]?.name)\n\t\t\n\t\tconsole.log(appsmith.store.typeFile + \":\" +appsmith.store.fileName)\n\t\tconsole.log(appsmith.store.filePdf)\n\t\t\n\t\tawait Api_Drive.run()\n\t\tstoreValue('drive_URL', await Api_Drive.data)\n\t\tconsole.log(appsmith.store.drive_URL)\n\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageLicense_JS_storeValue",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2b8"
+}

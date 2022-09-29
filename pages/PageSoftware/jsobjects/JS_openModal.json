@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_openModal",
+    "pageId": "PageSoftware",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tstore_modal: () => {\n\t\t{{storeValue('softwareKey', TableSoftware.selectedRow)}}\n\t\t{{showModal('Modal1')}}\n\t},\n\tstore_modelUpdate: async () => {\n\t\tawait storeValue('softwareUpdate', JSONFormSoftware.formData)\n\t\tawait API_PUT_Software.run()\n\t\t//storeValue('Authorize_Data_API', undefined)\n\t\tawait JS_getSoftware.getSoftware()\n\t\tcloseModal('Modal1')\n\t},\n\tstore_clickUpdate: async (rowName, rowId, rowUpdate) => {\n\t\tawait storeValue('rowUpdate', rowUpdate)\n\t\tawait storeValue('rowId', rowId)\n\t\tif(rowUpdate === true){\n\t\t\tconst result = \"{\"+rowName+\"false\"+\"}\"\n\t\t\tstoreValue('modalUpdateSoftware', result)\n\t\t\tawait API_PUT_SoftwareById.run()\n\t\t\tawait JS_getSoftware.getSoftware()\n\t\t}else{\n\t\t\tconst result = \"{\"+rowName+\"true\"+\"}\"\n\t\t\tstoreValue('modalUpdateSoftware', result)\n\t\t\tawait API_PUT_SoftwareById.run()\n\t\t\tawait JS_getSoftware.getSoftware()\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageSoftware_JS_openModal",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc288"
+}

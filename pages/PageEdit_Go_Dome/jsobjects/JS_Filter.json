@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_Filter",
+    "pageId": "PageEdit_Go_Dome",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tstate: {\n\t\tdivision: [],\n\t\tauth: {\n\t\t\t\"Hardware\": {\n        \"NoteBook\": {\n          \"Any Cpu -16 GB\": false,\n          \"Any Cpu -32 GB\": false,\n          \"Laptop (Intel -32 GB DevOnly)\": false\n        },\n        \"monitor\": {\n          \"Extended Monitor 1\": false,\n          \"Extended Monitor 2\": false,\n          \"Extended Monitor 3\": false\n        },\n        \"Macbook\": false,\n        \"Extended Graphic Monitor 2\": false,\n        \"Docking Station\": false,\n        \"Mouse+Keyboard\": false,\n        \"Mobile Phone\": false\n\t\t},\n\t\t\"Software\": {\n        \"7Zip\": true,\n        \"Anydesk (Remote Client)\": false,\n        \"Google Chrome\": false,\n        \"Dbeaver\": false,\n        \"SmartPSS (Security Camera)\": false,\n        \"Discord\": false,\n        \"VPN Client\": false,\n        \"Power BI Desktop\": false,\n        \"Microsoft Office\": false,\n        \"VPN Production (Database,LOS)\": false,\n        \"VPN Development (Alpha,Beta,Gamma)\": false,\n        \"S3 File Browser\": false,\n        \"SAP GUI\": false,\n        \"Adobe Acrobat Reader Free (PDF Reader)\": false,\n        \"Zeplin\": false,\n        \"Figma\": false\n      },\n\t\t\"License\": {\n        \"MS Office 365 (License)\": false,\n        \"PowerBI Pro (License)\": false,\n        \"Adobe Photoshop (Software & License)\": false\n      }\n\t\t}\n\t},\n\tfilterDivision: async() => {\n\t\tlet data = await API_Get_Division.run()\n\t\tlet label = data.map((item) => {\n\t\t\treturn item.Division\n\t\t})\n\t\tfor(let i = 0; i<label.length; i++) {\n\t\t\tthis.state.division.push({\n\t\t\t\"label\": label[i],\n\t\t\t\"value\": label[i],\n\t\t})\t\n\t\t}\n\t\tstoreValue('authMatrixTest', this.state.auth)\n\t\tstoreValue('stateDivision', this.state.division)\n\t}\n}",
+    "variables": [
+      {
+        "name": "state",
+        "value": "{\n  division: [],\n  auth: {\n    \"Hardware\": {\n      \"NoteBook\": {\n        \"Any Cpu -16 GB\": false,\n        \"Any Cpu -32 GB\": false,\n        \"Laptop (Intel -32 GB DevOnly)\": false\n      },\n      \"monitor\": {\n        \"Extended Monitor 1\": false,\n        \"Extended Monitor 2\": false,\n        \"Extended Monitor 3\": false\n      },\n      \"Macbook\": false,\n      \"Extended Graphic Monitor 2\": false,\n      \"Docking Station\": false,\n      \"Mouse+Keyboard\": false,\n      \"Mobile Phone\": false\n    },\n    \"Software\": {\n      \"7Zip\": true,\n      \"Anydesk (Remote Client)\": false,\n      \"Google Chrome\": false,\n      \"Dbeaver\": false,\n      \"SmartPSS (Security Camera)\": false,\n      \"Discord\": false,\n      \"VPN Client\": false,\n      \"Power BI Desktop\": false,\n      \"Microsoft Office\": false,\n      \"VPN Production (Database,LOS)\": false,\n      \"VPN Development (Alpha,Beta,Gamma)\": false,\n      \"S3 File Browser\": false,\n      \"SAP GUI\": false,\n      \"Adobe Acrobat Reader Free (PDF Reader)\": false,\n      \"Zeplin\": false,\n      \"Figma\": false\n    },\n    \"License\": {\n      \"MS Office 365 (License)\": false,\n      \"PowerBI Pro (License)\": false,\n      \"Adobe Photoshop (Software & License)\": false\n    }\n  }\n}"
+      }
+    ]
+  },
+  "id": "PageEdit_Go_Dome_JS_Filter",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad193ead37f152bc272"
+}

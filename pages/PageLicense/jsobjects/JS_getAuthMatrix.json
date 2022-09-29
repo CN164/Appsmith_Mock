@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_getAuthMatrix",
+    "pageId": "PageLicense",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetAuthorizeMatrixByPosition: async() => {\n\t\tlet position = appsmith.store.licenseKey.position\n\t\tconsole.log(position)\n\t\tlet data = await API_GET_AuthorizeMatrix.data\n\t\tconsole.log(data)\n\t\tlet filterVersion = data?.filter((item) => {\n\t\t\treturn item.version_id === appsmith.store.licenseKey.version && item.Position === position\n\t\t})\n\t\tstoreValue('authByVersion', filterVersion[0])\n\t\tstoreValue('License_By_Position', filterVersion[0]?.License)\n\t\tstoreValue('Hardware_By_Position', filterVersion[0]?.Hardware)\n\t\tstoreValue('Software_By_Position', filterVersion[0]?.Software)\n\t\t//console.log(appsmith.store.authByVersion)\n\t\tconsole.log(appsmith.store.Hardware_By_Position)\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageLicense_JS_getAuthMatrix",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2ba"
+}

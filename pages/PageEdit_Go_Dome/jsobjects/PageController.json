@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PageController",
+    "pageId": "PageEdit_Go_Dome",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tGetDivisionList: async function () {\n\t\tawait API_Get_Division.run();\n\t\tawait storeValue('divisionList', API_Get_Division.data, true);\n\t\tstoreValue(\"divisionOptions\", PageLogic.MapSelectOptionList(API_Get_Division.data, \"Division\"), true);\n\t\t//return PageLogic.MapSelectOptionList(API_Get_Division.data, \"Division\");\n\t},\n\tGetPositionList: async function (divisionName) {\n\t\tlet positionList = appsmith.store.divisionList.Position;\n\t\treturn PageLogic.MapSelectOptionList(positionList, \"name\");\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageEdit_Go_Dome_PageController",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad193ead37f152bc276"
+}

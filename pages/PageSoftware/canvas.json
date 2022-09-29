@@ -1,0 +1,1760 @@
+{
+  "unpublishedPage": {
+    "name": "PageSoftware",
+    "slug": "pagesoftware",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 820,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 60,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "widgetName": "IconButton2",
+              "onClick": "{{JS_getSoftware.getSoftwareVersion1()}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 0,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
+              "isDisabled": false,
+              "key": "nspnkkof7x",
+              "isDeprecated": false,
+              "rightColumn": 3,
+              "iconName": "refresh",
+              "widgetId": "mjzlhjy4qg",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "widgetName": "Button_navigateTo_Group",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "groupButtons.groupButton2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemedl1wsn9pe.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.menuItems.menuItem2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemgwlh8gl2q1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemon4xdf4wgr.onClick"
+                }
+              ],
+              "displayName": "Button Group",
+              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 0,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "groupButtons": {
+                "groupButton1": {
+                  "label": "License",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "menuItems": {
+                    "menuItemon4xdf4wgr": {
+                      "id": "menuItemon4xdf4wgr",
+                      "index": 0,
+                      "label": "Software",
+                      "widgetId": "zi6f8sgi2m",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{storeValue('AuthorizeData', Authorize_Data.Software)}}"
+                    }
+                  },
+                  "buttonColor": "#002c70",
+                  "iconAlign": "left",
+                  "onClick": "{{navigateTo('PageLicense', {})}}"
+                },
+                "groupButtonpkhhi9iot4": {
+                  "id": "groupButtonpkhhi9iot4",
+                  "index": 1,
+                  "label": "Hardware",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "lml4qglzd4",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "#002c70",
+                  "onClick": "{{navigateTo('PageHardware', {})}}"
+                },
+                "groupButton3jgizw7zuo": {
+                  "id": "groupButton3jgizw7zuo",
+                  "index": 2,
+                  "label": "Software",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "cuul3azjkb",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "#002c70",
+                  "onClick": "{{navigateTo('PageSoftware', {})}}"
+                }
+              },
+              "type": "BUTTON_GROUP_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemon4xdf4wgr.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonpkhhi9iot4.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3jgizw7zuo.onClick"
+                }
+              ],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "key": "7eixq0t0mx",
+              "orientation": "horizontal",
+              "isDeprecated": false,
+              "rightColumn": 21,
+              "widgetId": "mmgvedg7p4",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "multiRowSelection": false,
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 6,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.editActions.saveButtonColor"
+                },
+                {
+                  "key": "childStylesheet.editActions.saveBorderRadius"
+                },
+                {
+                  "key": "childStylesheet.editActions.discardButtonColor"
+                },
+                {
+                  "key": "childStylesheet.editActions.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.Position.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Division.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Position.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.Division.cellBackground"
+                },
+                {
+                  "key": "cellBackground"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Discord.computedValue"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.computedValue"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.computedValue"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.computedValue"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.iconName"
+                },
+                {
+                  "key": "primaryColumns.Discord.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.Discord.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.Discord.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.Discord.iconName"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.iconName"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.iconName"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.iconName"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.iconName"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.iconName"
+                },
+                {
+                  "key": "primaryColumns.version_id.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": "",
+              "showInlineEditingOptionDropdown": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "enableClientSideSearch": true,
+              "version": 1,
+              "textColor": "#231f20",
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "0.375rem",
+              "primaryColumnId": "Position",
+              "defaultSelectedRowIndices": "",
+              "widgetName": "TableSoftware",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "id",
+                "version_id",
+                "Position",
+                "Division",
+                "Dbeaver",
+                "Discord",
+                "VPN_Client",
+                "Power_BI_Desktop",
+                "VPN_Production_Database_LOS",
+                "S3_File_Browser",
+                "SAP_GUI"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onRowSelected"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.iconName"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.Discord.iconName"
+                },
+                {
+                  "key": "primaryColumns.Discord.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.iconName"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.iconName"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.iconName"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.iconName"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.iconName"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.onClick"
+                },
+                {
+                  "key": "primaryColumns.Discord.onClick"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.onClick"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.onClick"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.onClick"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.onClick"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.onClick"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 80,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "Extended_Monitor_3": 148,
+                "Position": 208,
+                "id": 69,
+                "VPN_Production_Database_LOS": 265
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "onPageSizeChange": "",
+              "parentColumnSpace": 16.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onRowSelected"
+                },
+                {
+                  "key": "primaryColumns.Dbeaver.onClick"
+                },
+                {
+                  "key": "primaryColumns.Discord.onClick"
+                },
+                {
+                  "key": "primaryColumns.VPN_Client.onClick"
+                },
+                {
+                  "key": "primaryColumns.Power_BI_Desktop.onClick"
+                },
+                {
+                  "key": "primaryColumns.VPN_Production_Database_LOS.onClick"
+                },
+                {
+                  "key": "primaryColumns.S3_File_Browser.onClick"
+                },
+                {
+                  "key": "primaryColumns.SAP_GUI.onClick"
+                }
+              ],
+              "primaryColumns": {
+                "Position": {
+                  "allowCellWrapping": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Position",
+                  "id": "Position",
+                  "alias": "Position",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Position",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Position\"]))}}",
+                  "fontStyle": "BOLD",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+                  "textColor": "#231f20"
+                },
+                "Division": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Division",
+                  "id": "Division",
+                  "alias": "Division",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Division",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Division\"]))}}",
+                  "fontStyle": "BOLD",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+                  "textColor": "#231f20"
+                },
+                "id": {
+                  "allowCellWrapping": false,
+                  "index": 11,
+                  "width": 150,
+                  "originalId": "id",
+                  "id": "id",
+                  "alias": "id",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                  "cellBackground": "#fafafa"
+                },
+                "Dbeaver": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "Dbeaver",
+                  "id": "Dbeaver",
+                  "alias": "Dbeaver",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Dbeaver",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Dbeaver\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Dbeaver\"] === true ? 'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Dbeaver\"] === true ? 'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"Dbeaver\"'+\":\",\ncurrentRow.id,currentRow[\"Dbeaver\"])}}"
+                },
+                "Discord": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Discord",
+                  "id": "Discord",
+                  "alias": "Discord",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Discord",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Discord\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Discord\"] === true ? 'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Discord\"] === true ? 'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"Discord\"'+\":\",\ncurrentRow.id,currentRow[\"Discord\"])}}"
+                },
+                "VPN_Client": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "VPN_Client",
+                  "id": "VPN_Client",
+                  "alias": "VPN_Client",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "VPN_Client",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VPN_Client\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VPN_Client\"] === true ? 'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VPN_Client\"] === true ? 'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"VPN_Client\"'+\":\",\ncurrentRow.id,currentRow[\"VPN_Client\"])}}"
+                },
+                "Power_BI_Desktop": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "Power_BI_Desktop",
+                  "id": "Power_BI_Desktop",
+                  "alias": "Power_BI_Desktop",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Power_BI_Desktop",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Power_BI_Desktop\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Power_BI_Desktop\"] === true ? 'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Power_BI_Desktop\"] === true ? 'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"Power_BI_Desktop\"'+\":\",\ncurrentRow.id,currentRow[\"Power_BI_Desktop\"])}}"
+                },
+                "VPN_Production_Database_LOS": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "VPN_Production_Database_LOS",
+                  "id": "VPN_Production_Database_LOS",
+                  "alias": "VPN_Production_Database_LOS",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "VPN_Production_Database_LOS",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VPN_Production_Database_LOS\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VPN_Production_Database_LOS\"] === true ? 'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VPN_Production_Database_LOS\"] === true ? 'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"VPN_Production_Database_LOS\"'+\":\",\ncurrentRow.id,currentRow[\"VPN_Production_Database_LOS\"])}}"
+                },
+                "S3_File_Browser": {
+                  "allowCellWrapping": false,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "S3_File_Browser",
+                  "id": "S3_File_Browser",
+                  "alias": "S3_File_Browser",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "S3_File_Browser",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"S3_File_Browser\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"S3_File_Browser\"]===true? 'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"S3_File_Browser\"]===true? 'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"S3_File_Browser\"'+\":\",\ncurrentRow.id,currentRow[\"S3_File_Browser\"])}}"
+                },
+                "SAP_GUI": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "SAP_GUI",
+                  "id": "SAP_GUI",
+                  "alias": "SAP_GUI",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "iconButton",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "SAP_GUI",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SAP_GUI\"]))}}",
+                  "cellBackground": "#fafafa",
+                  "buttonColor": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SAP_GUI\"]===true?'lime':'red'))}}",
+                  "borderRadius": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "iconName": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SAP_GUI\"]===true?'tick':'cross'))}}",
+                  "onClick": "{{JS_openModal.store_clickUpdate('\"SAP_GUI\"'+\":\",\ncurrentRow.id,currentRow[\"SAP_GUI\"])}}"
+                },
+                "version_id": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "version_id",
+                  "id": "version_id",
+                  "alias": "version_id",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "version_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableSoftware.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version_id\"]))}}",
+                  "cellBackground": "#fafafa"
+                }
+              },
+              "onRowSelected": "{{JS_openModal.store_modal()}}/",
+              "key": "415oinbiox",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "ou6rrcmuzo",
+              "tableData": "{{appsmith.store.Authorize_Data_API_Software_NTBX}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": false,
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Modal1",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification"
+              ],
+              "topRow": 63,
+              "bottomRow": 87,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 17.9375,
+              "leftColumn": 38,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 650,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 658,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 55,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "83zjiq1sx6",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "iconName": "cross",
+                      "widgetId": "1fvf3w17cx",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "phabczjv8q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Authorize Matrix - Software",
+                      "key": "ib24ormxk0",
+                      "isDeprecated": false,
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "widgetId": "85st42qtwz",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "phabczjv8q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "Dbeaver": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Dbeaver))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Dbeaver",
+                              "identifier": "Dbeaver",
+                              "position": 4,
+                              "originalIdentifier": "Dbeaver",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Dbeaver"
+                            },
+                            "Discord": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Discord))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Discord",
+                              "identifier": "Discord",
+                              "position": 5,
+                              "originalIdentifier": "Discord",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Discord"
+                            },
+                            "id": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "2",
+                              "isCustomField": false,
+                              "accessor": "id",
+                              "identifier": "id",
+                              "position": 0,
+                              "originalIdentifier": "id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Id"
+                            },
+                            "version_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.version_id))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "version_id",
+                              "identifier": "version_id",
+                              "position": 1,
+                              "originalIdentifier": "version_id",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Version Id"
+                            },
+                            "Position": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Position))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "Software Engineer",
+                              "isCustomField": false,
+                              "accessor": "Position",
+                              "identifier": "Position",
+                              "position": 2,
+                              "originalIdentifier": "Position",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Position"
+                            },
+                            "Division": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Division))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "Technology",
+                              "isCustomField": false,
+                              "accessor": "Division",
+                              "identifier": "Division",
+                              "position": 3,
+                              "originalIdentifier": "Division",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "labelTextSize": "0.875rem",
+                              "label": "Division"
+                            },
+                            "VPN_Client": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.VPN_Client))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": true,
+                              "isCustomField": false,
+                              "accessor": "VPN_Client",
+                              "identifier": "VPN_Client",
+                              "position": 6,
+                              "originalIdentifier": "VPN_Client",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "VPN Client"
+                            },
+                            "Power_BI_Desktop": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Power_BI_Desktop))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Power_BI_Desktop",
+                              "identifier": "Power_BI_Desktop",
+                              "position": 7,
+                              "originalIdentifier": "Power_BI_Desktop",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Power BI Desktop"
+                            },
+                            "VPN_Production_Database_LOS": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.VPN_Production_Database_LOS))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "VPN_Production_Database_LOS",
+                              "identifier": "VPN_Production_Database_LOS",
+                              "position": 8,
+                              "originalIdentifier": "VPN_Production_Database_LOS",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "VPN Production Database LOS"
+                            },
+                            "S3_File_Browser": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.S3_File_Browser))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "S3_File_Browser",
+                              "identifier": "S3_File_Browser",
+                              "position": 9,
+                              "originalIdentifier": "S3_File_Browser",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "S 3 File Browser"
+                            },
+                            "SAP_GUI": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SAP_GUI))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "SAP_GUI",
+                              "identifier": "SAP_GUI",
+                              "position": 10,
+                              "originalIdentifier": "SAP_GUI",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "SAP GUI"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "id": "2",
+                            "version_id": 1,
+                            "Position": "Software Engineer",
+                            "Division": "Technology",
+                            "Dbeaver": false,
+                            "Discord": false,
+                            "VPN_Client": true,
+                            "Power_BI_Desktop": false,
+                            "VPN_Production_Database_LOS": false,
+                            "S3_File_Browser": false,
+                            "SAP_GUI": false
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONFormSoftware.sourceData, JSONFormSoftware.formData, JSONFormSoftware.fieldState)}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                      "widgetName": "JSONFormSoftware",
+                      "submitButtonStyles": {
+                        "buttonColor": "transparent",
+                        "borderRadius": "0px",
+                        "boxShadow": "none",
+                        "buttonVariant": "PRIMARY",
+                        "iconAlign": "left"
+                      },
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children._7Zip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk_RemoteClient.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.GoogleChrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Discord.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Client.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Power_BI_Desktop.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production_Database_LOS.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.S3_File_Browser.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_GUI.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk__Remote_Client_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Google_Chrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SmartPSS__Security_Camera_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Microsoft_Office.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production__Database_LOS_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Development__Alpha_Beta_Gamma_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Acrobat_Reader_Free__PDF_Reader_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Zeplin.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Figma.defaultValue"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "",
+                      "topRow": 6,
+                      "bottomRow": 63,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "resetButtonStyles.buttonColor"
+                        },
+                        {
+                          "key": "resetButtonStyles.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.RADIO_GROUP.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.SWITCH.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.cellBorderRadius"
+                        },
+                        {
+                          "key": "sourceData"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Discord.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Discord.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Client.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Client.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Power_BI_Desktop.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Power_BI_Desktop.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.S3_File_Browser.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.S3_File_Browser.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_GUI.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_GUI.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.version_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.version_id.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.version_id.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Position.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Position.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Position.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Division.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Division.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Division.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production_Database_LOS.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production_Database_LOS.accentColor"
+                        }
+                      ],
+                      "sourceData": "{{appsmith.store.softwareKey}}",
+                      "showReset": false,
+                      "resetButtonLabel": "Closs",
+                      "key": "chdvv8c09u",
+                      "backgroundColor": "#fff",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "autoGenerateForm": true,
+                      "widgetId": "eellsyzyqe",
+                      "resetButtonStyles": {
+                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "SECONDARY",
+                        "placement": "CENTER"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "phabczjv8q",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": false,
+                      "submitButtonLabel": "",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "g4i5fieuku",
+                  "isDeprecated": false,
+                  "rightColumn": 430.5,
+                  "detachFromLayout": true,
+                  "widgetId": "phabczjv8q",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "4c2smckys6",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              ],
+              "key": "aumd4hkjd3",
+              "height": 658,
+              "isDeprecated": false,
+              "rightColumn": 62,
+              "detachFromLayout": true,
+              "widgetId": "4c2smckys6",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "width": 582
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "PageSoftware_API_GET_Software",
+              "name": "API_GET_Software",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PageSoftware_API_GET_Software_NTBX",
+              "name": "API_GET_Software_NTBX",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "PageSoftware_JS_getSoftware.getSoftware",
+              "name": "JS_getSoftware.getSoftware",
+              "collectionId": "PageSoftware_JS_getSoftware",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PageSoftware_JS_getSoftware.getSoftwareVersion1",
+              "name": "JS_getSoftware.getSoftwareVersion1",
+              "collectionId": "PageSoftware_JS_getSoftware",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "PageSoftware",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63282add93ead37f152bc2ca_63282add93ead37f152bc2da"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "PageTab_ViewVersion",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\treloads: async () => {\n\t\tshowModal('Tab_Modal')\n\t\tsetInterval( () => {API_GET_AuthorizeMatrix.run()}, 5000, \"myTimer\")\n\t\tstoreValue('dataTimer', await API_GET_AuthorizeMatrix.data)\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageTab_ViewVersion_JSObject1",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad193ead37f152bc239"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PageLogic",
+    "pageId": "PageListVersion",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tSortFilterVersion: function (a, b) {\n\t\tif (a.version_number > b.version_number)\n\t\t\treturn -1;\n\t\telse\n\t\t\treturn 1;\n\t},\n\tCheckDateStart: function (source, filterStart) {\n\t\tconsole.log(source, filterStart);\n\t\tconsole.log(moment(source), moment(filterStart));\n\t\treturn moment(source).isSameOrAfter(moment(filterStart), 'day') == true;\n\t},\n\tCheckDateEnd: function (source, filterEnd) {\n\t\tconsole.log(source, filterEnd);;\n\t\tconsole.log(moment(source), moment(filterEnd));\n\t\treturn moment(source).isSameOrBefore(moment(filterEnd), 'day') == true;\n\t},\n\t\n\tFilterDateAll: function (source, filterVersion) {\n\t\tconsole.log(source);\n\t\tlet output = [];\n\t\tif (!filterVersion) {\n\t\t\treturn source;\n\t\t} else {\n\t\t\tfor (let i=0; i < source.length; i++) {\n\t\t\t\tconsole.log(`Source [${i+1}]`);\n\t\t\t\tlet checkFilter = true;\n\t\t\t\t// filter section\n\t\t\t\tif (filterVersion.createDateStart !== \"\" && !this.CheckDateStart(source[i].created_at, filterVersion.createDateStart)) {\n\t\t\t\t\tconsole.log(\"false : createStart\");\n\t\t\t\t\tcheckFilter = false;\n\t\t\t\t}\n\t\t\t\tif (filterVersion.createDateEnd !== \"\" && !this.CheckDateEnd(source[i].created_at, filterVersion.createDateEnd)) {\n\t\t\t\t\tconsole.log(\"false : createEnd\");\n\t\t\t\t\tcheckFilter = false;\n\t\t\t\t}\n\t\t\t\tif (filterVersion.effectiveDateStart !== \"\" && !this.CheckDateStart(source[i].effective_date, filterVersion.effectiveDateStart)) {\n\t\t\t\t\tconsole.log(\"false : effectiveStart\");\n\t\t\t\t\tcheckFilter = false;\n\t\t\t\t}\n\t\t\t\tif (filterVersion.effectiveDateEnd !== \"\" && !this.CheckDateEnd(source[i].effective_date, filterVersion.effectiveDateEnd)) {\n\t\t\t\t\tconsole.log(\"false : effectiveEnd\");\n\t\t\t\t\tcheckFilter = false;\n\t\t\t\t}\n\t\t\t\t// validate filter check and push into output\n\t\t\t\tif (checkFilter) {\n\t\t\t\t\toutput.push(source[i]);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tconsole.log(output);\n\t\treturn output;\n\t},\n\tTransformStatus: function (currentRow) {\n\t\tif (currentRow[\"is_active\"]) {\n\t\t\treturn PageConstant.versionStatus.active;\n\t\t}\n\t\tif (currentRow[\"is_final\"]) {\n\t\t\treturn PageConstant.versionStatus.inactive;\n\t\t} else {\n\t\t\treturn PageConstant.versionStatus.draft;\n\t\t}\n\t},\n}",
+    "variables": []
+  },
+  "id": "PageListVersion_PageLogic",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2ae"
+}

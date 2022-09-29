@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_getLicenses",
+    "pageId": "PageLicense",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetLicenses: async () => {\n\t\tawait API_GET_AuthorizeMatrix.run()\n\t\tawait storeValue('Authorize_Data_API_License', API_GET_AuthorizeMatrix.data)\n\t\tconsole.log(appsmith.store['Authorize_Data_API_License'])\n\t},\n\n\tgetAuthorizeMatixs: async () => {\n\t\tlet DataLicense = [];\n\t\tawait API_GET_AuthorizeMatrix.run()\n\t\tawait storeValue('Data_API_License_NTBX', API_GET_AuthorizeMatrix.data)\n\t\tawait storeValue('Authorize_Data_API_Authorize_Matrix', undefined)\n\t\tfor(let i=0;i < API_GET_AuthorizeMatrix.data.length;i++){\n\t\t\tlet objectLicense = {};\n\t\t\tobjectLicense['id'] = API_GET_AuthorizeMatrix.data[i].id\n\t\t\tobjectLicense['version'] = API_GET_AuthorizeMatrix.data[i].version_id\n\t\t\tobjectLicense['position'] = API_GET_AuthorizeMatrix.data[i].Position\n\t\t\tobjectLicense['division'] = API_GET_AuthorizeMatrix.data[i].Division\n\t\t\t_.forOwn(API_GET_AuthorizeMatrix.data[i].License, (value, key) => {\n\t\t\t\tobjectLicense[key] = value\n\t\t\t});\n\t\t\tDataLicense?.push(objectLicense)\n\t\t}\n\t\tstoreValue('Authorize_Data_API_Authorize_Matrix', _.unionBy(DataLicense))\n\t\tappsmith.store.Authorize_Data_API_Authorize_Matrix.forEach((item) =>{\n\t\t\tconsole.log(item)\n\t\t})\n\t},\n\n\tgetLicensesNTBX: async () => {\n\t\tlet DataLicense = appsmith.store.Authorize_Data_API_License_NTBX || [];\n\t\tif(DataLicense?.length > 0){\n\t\t\tDataLicense = []\n\t\t}\n\t\tawait API_GET_License_NTBX.run()\n\t\tawait storeValue('Data_API_License_NTBX', API_GET_License_NTBX.data)\n\t\tawait storeValue('Authorize_Data_API_License_NTBX', undefined)\n\t\tfor(let i=0;i < API_GET_License_NTBX.data.length;i++){\n\t\t\tif(API_GET_License_NTBX.data[i].version_id === 1) {\n\t\t\t\tDataLicense?.push(API_GET_License_NTBX.data[i])\n\t\t\t\tstoreValue('Authorize_Data_API_License_NTBX', _.unionBy(DataLicense))\n\t\t\t\tconsole.log(appsmith.store['Authorize_Data_API_License_NTBX'])\n\t\t\t}else {\n\t\t\t\tconsole.log('not found!!')\n\t\t\t}\n\t\t}\n\t}\n\t\n}",
+    "variables": []
+  },
+  "id": "PageLicense_JS_getLicenses",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2b4"
+}

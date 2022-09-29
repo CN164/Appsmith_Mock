@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "PageConstant",
+    "pageId": "PageListVersion",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tversionStatus: {\n\t\tdraft: \"DRAFT\",\n\t\tactive: \"ACTIVE\",\n\t\tinactive: \"INACTIVE\"\n\t},\n\tstyle: {\n\t\tcolor: {\n\t\t\tdefault: \"#ffffff\",\n\t\t\tversionStatus: {\n\t\t\t\tdraft: \"#ffff99\",\n\t\t\t\tactive: \"#ccff99\",\n\t\t\t\tinactive: \"#b3b3b3\"\n\t\t\t}\n\t\t},\n\t}\n}",
+    "variables": [
+      {
+        "name": "versionStatus",
+        "value": "{\n  draft: \"DRAFT\",\n  active: \"ACTIVE\",\n  inactive: \"INACTIVE\"\n}"
+      },
+      {
+        "name": "style",
+        "value": "{\n  color: {\n    default: \"#ffffff\",\n    versionStatus: {\n      draft: \"#ffff99\",\n      active: \"#ccff99\",\n      inactive: \"#b3b3b3\"\n    }\n  }\n}"
+      }
+    ]
+  },
+  "id": "PageListVersion_PageConstant",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2b0"
+}

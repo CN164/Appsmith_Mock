@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PageLogic",
+    "pageId": "PageEdit_Go_Dome",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tSearchSourceObject: async function (source, searchString) {\n\t\tlet entries = _.toPairs(source);\n\t\tlet output = {};\n\t\tfor (let i = 0; i < entries.length; i++) {\n\t\t\tlet parentKey = entries[i][0];\n\t\t\tlet parentValue = entries[i][1];\n\t\t\tif (parentKey.includes(searchString)) {\n\t\t\t\t_.set(output, [parentKey], parentValue);\n\t\t\t} else {\n\t\t\t\tif (_.isObject(parentValue)) {\n\t\t\t\t\tlet childEntries = _.toPairs(parentValue);\n\t\t\t\t\tfor (let j = 0; j < childEntries.length; j++) {\n\t\t\t\t\t\tlet childKey = childEntries[j][0];\n\t\t\t\t\t\tlet childValue = childEntries[j][1];\n\t\t\t\t\t\tif (childKey.includes(searchString)) {\n\t\t\t\t\t\t\t_.set(output, [parentKey, childKey], childValue);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tlet copy = {...appsmith.store.authMatrixTest}\n\t\tconsole.log(copy)\n\t\tstoreValue('softwareKeyClone', copy)\n\t\tif(!Input1.text) {\n\t\t\tstoreValue('softwareKeyClone', appsmith.store.authMatrixTest)\n\t\t}\n\t\tconsole.log(output)\n\t\treturn output;\n\t},\n\tSaveChangesToSource: function (source, changes) {\n\t\treturn _.merge(source, changes);\n\t},\n\tMapSelectOptionList: function (source, fieldName) {\n\t\tlet output = source.map((item) => {\n\t\t\treturn {\n\t\t\t\tlabel: item[fieldName],\n\t\t\t\tvalue: item[fieldName],\n\t\t\t};\n\t\t});\n\t\treturn output;\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageEdit_Go_Dome_PageLogic",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad193ead37f152bc278"
+}

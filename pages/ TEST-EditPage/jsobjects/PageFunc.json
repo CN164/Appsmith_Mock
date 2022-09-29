@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "PageFunc",
+    "pageId": " TEST-EditPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tinputData: {\n\t\t\"NoteBook\": {\n\t\t\t\"Any Cpu 16 GB\": false,\n\t\t\t\"Any Cpu 32 GB\": true,\n\t\t\t\"Laptop (Intel 32 GB DevOnly)\": false\n\t\t},\n\t\t\"Monitor\": {\n\t\t\t\"Extended Monitor 1\": true,\n\t\t\t\"Extended Monitor 2\": true,\n\t\t\t\"Extended Monitor 3\": false\n\t\t},\n\t\t\"Macbook\": false,\n\t\t\"Extended Graphic Monitor 2\": false,\n\t\t\"Docking Station\": true,\n\t\t\"Mouse+Keyboard\": true,\n\t\t\"Mobile Phone\": false\n\t},\n\tRefreshInputData: function () {\n\t\tstoreValue(\"hardwareConfig\", this.inputData, false);\n\t\tstoreValue(\"output\", this.inputData, false);\n\t},\n\tFilterJsonObject: async function (source, searchString) {\n\t\tlet entries = _.toPairs(source);\n\t\tlet output = {};\n\t\tfor (let i = 0; i < entries.length; i++) {\n\t\t\tlet parentKey = entries[i][0];\n\t\t\tlet parentValue = entries[i][1];\n\t\t\tif (parentKey.includes(searchString)) {\n\t\t\t\t_.set(output, [parentKey], parentValue);\n\t\t\t} else {\n\t\t\t\tif (_.isObject(parentValue)) {\n\t\t\t\t\tlet childEntries = _.toPairs(parentValue);\n\t\t\t\t\tfor (let j = 0; j < childEntries.length; j++) {\n\t\t\t\t\t\tlet childKey = childEntries[j][0];\n\t\t\t\t\t\tlet childValue = childEntries[j][1];\n\t\t\t\t\t\tif (childKey.includes(searchString)) {\n\t\t\t\t\t\t\t_.set(output, [parentKey, childKey], childValue);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tconsole.log(output);\n\t\tawait storeValue(\"hardwareConfig\", output, false);\n\t},\n\tSaveConfigToOutput: async function () {\n\t\tlet hardwareConfig = appsmith.store.hardwareConfig;\n\t\tconsole.log(hardwareConfig);\n\t\tlet formState = InputJsonForm.formData;\n\t\tconsole.log(formState);\n\t\tlet output = appsmith.store.output;\n\t\tconsole.log(_.merge(output, formState));\n\t\tawait storeValue(\"output\", _.merge(output, formState), false);\n\t},\n\tCommitChangeToOutput: function () {\n\t\tlet output = appsmith.store.output;\n\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "inputData",
+        "value": "{\n  \"NoteBook\": {\n    \"Any Cpu 16 GB\": false,\n    \"Any Cpu 32 GB\": true,\n    \"Laptop (Intel 32 GB DevOnly)\": false\n  },\n  \"Monitor\": {\n    \"Extended Monitor 1\": true,\n    \"Extended Monitor 2\": true,\n    \"Extended Monitor 3\": false\n  },\n  \"Macbook\": false,\n  \"Extended Graphic Monitor 2\": false,\n  \"Docking Station\": true,\n  \"Mouse+Keyboard\": true,\n  \"Mobile Phone\": false\n}"
+      }
+    ]
+  },
+  "id": " TEST-EditPage_PageFunc",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad193ead37f152bc228"
+}

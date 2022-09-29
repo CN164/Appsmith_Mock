@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_openModal",
+    "pageId": "PageHardware",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tstore_modal: () => {\n\t\t{{storeValue('hardwareKey', TableHardware.selectedRow)}}\n\t\t{{showModal('Modal1')}}\n\t},\n\tstore_modelUpdate: async () => {\n\t\tawait storeValue('hardwareUpdate', JSONFormHardware.formData)\n\t\tawait API_PUT_Hardware.run()\n\t\t//storeValue('Authorize_Data_API', undefined)\n\t\tawait JS_getHardware.getHardware()\n\t\tcloseModal('Modal1')\n\t},\n\tstore_clickUpdate: async (rowName, rowId, rowUpdate) => {\n\t\tawait storeValue('rowUpdate', rowUpdate)\n\t\tawait storeValue('rowId', rowId)\n\t\tif(rowUpdate === true){\n\t\t\tconst result = \"{\"+rowName+\"false\"+\"}\"\n\t\t\tstoreValue('modalUpdateHardware', result)\n\t\t\tawait API_PUT_HardwareById.run()\n\t\t\tawait JS_getHardware.getHardware()\n\t\t}else{\n\t\t\tconst result = \"{\"+rowName+\"true\"+\"}\"\n\t\t\tstoreValue('modalUpdateHardware', result)\n\t\t\tawait API_PUT_HardwareById.run()\n\t\t\tawait JS_getHardware.getHardware()\n\t\t}\n\t},\n\tpathStore: async () => {\n\t\tconsole.log(appsmith.store.indexId_test)\n\t\tif(appsmith.store.hardwareKey.id === appsmith.store.indexId_test){\n\t\t\tconsole.log('see')\n\t\t\tstoreValue('store_modal_Hardware', appsmith.store.hardwareKey)\n\t\t}else{\n\t\t\tconsole.log('not see')\n\t\t}\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "PageHardware_JS_openModal",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2bc"
+}

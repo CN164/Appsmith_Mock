@@ -1,0 +1,2910 @@
+{
+  "unpublishedPage": {
+    "name": "PageLicense",
+    "slug": "pagelicense",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 810,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 60,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "Modal1",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification"
+              ],
+              "topRow": 98,
+              "bottomRow": 122,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
+              "leftColumn": 38,
+              "dynamicBindingPathList": [
+                {
+                  "key": "backgroundColor"
+                }
+              ],
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 630,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 636,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "widgetName": "Text1CopyCopy",
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{appsmith.store.licenseKey.position +' - '+appsmith.store.licenseKey.division}}",
+                      "key": "ib24ormxk0",
+                      "isDeprecated": false,
+                      "rightColumn": 35,
+                      "disableLink": true,
+                      "textAlign": "LEFT",
+                      "widgetId": "snww0o2506",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "_7Zip": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"7Zip\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": true,
+                              "isCustomField": false,
+                              "accessor": "7Zip",
+                              "identifier": "_7Zip",
+                              "position": 0,
+                              "originalIdentifier": "7Zip",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "7 Zip"
+                            },
+                            "Anydesk__Remote_Client_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Anydesk (Remote Client)\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Anydesk (Remote Client)",
+                              "identifier": "Anydesk__Remote_Client_",
+                              "position": 1,
+                              "originalIdentifier": "Anydesk (Remote Client)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Anydesk Remote Client"
+                            },
+                            "Google_Chrome": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Google Chrome\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Google Chrome",
+                              "identifier": "Google_Chrome",
+                              "position": 2,
+                              "originalIdentifier": "Google Chrome",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Google Chrome"
+                            },
+                            "Dbeaver": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Dbeaver))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Dbeaver",
+                              "identifier": "Dbeaver",
+                              "position": 3,
+                              "originalIdentifier": "Dbeaver",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Dbeaver"
+                            },
+                            "SmartPSS__Security_Camera_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"SmartPSS (Security Camera)\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "SmartPSS (Security Camera)",
+                              "identifier": "SmartPSS__Security_Camera_",
+                              "position": 4,
+                              "originalIdentifier": "SmartPSS (Security Camera)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Smart PSS Security Camera"
+                            },
+                            "Discord": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Discord))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Discord",
+                              "identifier": "Discord",
+                              "position": 5,
+                              "originalIdentifier": "Discord",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Discord"
+                            },
+                            "VPN_Client": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"VPN Client\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "VPN Client",
+                              "identifier": "VPN_Client",
+                              "position": 6,
+                              "originalIdentifier": "VPN Client",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "VPN Client"
+                            },
+                            "Power_BI_Desktop": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Power BI Desktop\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Power BI Desktop",
+                              "identifier": "Power_BI_Desktop",
+                              "position": 7,
+                              "originalIdentifier": "Power BI Desktop",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Power BI Desktop"
+                            },
+                            "Microsoft_Office": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Microsoft Office\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Microsoft Office",
+                              "identifier": "Microsoft_Office",
+                              "position": 8,
+                              "originalIdentifier": "Microsoft Office",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Microsoft Office"
+                            },
+                            "VPN_Production__Database_LOS_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"VPN Production (Database,LOS)\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "VPN Production (Database,LOS)",
+                              "identifier": "VPN_Production__Database_LOS_",
+                              "position": 9,
+                              "originalIdentifier": "VPN Production (Database,LOS)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "VPN Production Database LOS"
+                            },
+                            "VPN_Development__Alpha_Beta_Gamma_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"VPN Development (Alpha,Beta,Gamma)\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "VPN Development (Alpha,Beta,Gamma)",
+                              "identifier": "VPN_Development__Alpha_Beta_Gamma_",
+                              "position": 10,
+                              "originalIdentifier": "VPN Development (Alpha,Beta,Gamma)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "VPN Development Alpha Beta Gamma"
+                            },
+                            "S3_File_Browser": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"S3 File Browser\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "S3 File Browser",
+                              "identifier": "S3_File_Browser",
+                              "position": 11,
+                              "originalIdentifier": "S3 File Browser",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "S 3 File Browser"
+                            },
+                            "SAP_GUI": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"SAP GUI\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "SAP GUI",
+                              "identifier": "SAP_GUI",
+                              "position": 12,
+                              "originalIdentifier": "SAP GUI",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "SAP GUI"
+                            },
+                            "Adobe_Acrobat_Reader_Free__PDF_Reader_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Adobe Acrobat Reader Free (PDF Reader)\"]))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Adobe Acrobat Reader Free (PDF Reader)",
+                              "identifier": "Adobe_Acrobat_Reader_Free__PDF_Reader_",
+                              "position": 13,
+                              "originalIdentifier": "Adobe Acrobat Reader Free (PDF Reader)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Adobe Acrobat Reader Free PDF Reader"
+                            },
+                            "Zeplin": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Zeplin))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Zeplin",
+                              "identifier": "Zeplin",
+                              "position": 14,
+                              "originalIdentifier": "Zeplin",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Zeplin"
+                            },
+                            "Figma": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Figma))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Figma",
+                              "identifier": "Figma",
+                              "position": 15,
+                              "originalIdentifier": "Figma",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Figma"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "7Zip": true,
+                            "Anydesk (Remote Client)": false,
+                            "Google Chrome": false,
+                            "Dbeaver": false,
+                            "SmartPSS (Security Camera)": false,
+                            "Discord": false,
+                            "VPN Client": false,
+                            "Power BI Desktop": false,
+                            "Microsoft Office": false,
+                            "VPN Production (Database,LOS)": false,
+                            "VPN Development (Alpha,Beta,Gamma)": false,
+                            "S3 File Browser": false,
+                            "SAP GUI": false,
+                            "Adobe Acrobat Reader Free (PDF Reader)": false,
+                            "Zeplin": false,
+                            "Figma": false
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Software.sourceData, Software.formData, Software.fieldState)}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                      "widgetName": "Software",
+                      "submitButtonStyles": {
+                        "buttonColor": "transparent",
+                        "borderRadius": "0px",
+                        "boxShadow": "none",
+                        "buttonVariant": "PRIMARY",
+                        "iconAlign": "left"
+                      },
+                      "borderColor": "transparent",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children._7Zip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk_RemoteClient.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.GoogleChrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.JIRA_Software.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Gsuite.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Workplace.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_Account.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.JIRA_Software.onChange"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.NoteBook_ram_32.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.NoteBook_ram_64.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.monitor_32_n.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.keyborad.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.JIRA_Software.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.Gsuite.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.Workplace.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.SAP_Account.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.MS_Office_365__License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.PowerBI_Pro__License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Photoshop__Software___License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__16_GB.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__32_GB.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Laptop__Intel__32_GB_DevOnly_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_1.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Macbook.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Extended_Graphic_Monitor_2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Docking_Station.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mouse_Keyboard.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mobile_Phone.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk__Remote_Client_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Google_Chrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SmartPSS__Security_Camera_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Discord.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Client.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Power_BI_Desktop.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Microsoft_Office.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production__Database_LOS_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Development__Alpha_Beta_Gamma_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.S3_File_Browser.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_GUI.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Acrobat_Reader_Free__PDF_Reader_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Zeplin.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Figma.defaultValue"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "",
+                      "topRow": 15,
+                      "bottomRow": 61,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "Software",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 43,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "resetButtonStyles.buttonColor"
+                        },
+                        {
+                          "key": "resetButtonStyles.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.RADIO_GROUP.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.SWITCH.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.cellBorderRadius"
+                        },
+                        {
+                          "key": "sourceData"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children._7Zip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children._7Zip.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk__Remote_Client_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk__Remote_Client_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Google_Chrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Google_Chrome.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SmartPSS__Security_Camera_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SmartPSS__Security_Camera_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Discord.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Discord.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Client.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Client.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Power_BI_Desktop.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Power_BI_Desktop.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Microsoft_Office.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Microsoft_Office.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production__Database_LOS_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Production__Database_LOS_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Development__Alpha_Beta_Gamma_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.VPN_Development__Alpha_Beta_Gamma_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.S3_File_Browser.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.S3_File_Browser.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_GUI.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_GUI.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Acrobat_Reader_Free__PDF_Reader_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Acrobat_Reader_Free__PDF_Reader_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Zeplin.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Zeplin.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Figma.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Figma.accentColor"
+                        }
+                      ],
+                      "sourceData": "{{appsmith.store.Software_By_Position}}",
+                      "showReset": false,
+                      "resetButtonLabel": "Closs",
+                      "key": "chdvv8c09u",
+                      "backgroundColor": "#fff",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "autoGenerateForm": true,
+                      "widgetId": "mlq4omh2o4",
+                      "resetButtonStyles": {
+                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "SECONDARY",
+                        "placement": "CENTER"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": false,
+                      "submitButtonLabel": "",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "NoteBook": {
+                              "children": {
+                                "Any_Cpu__16_GB": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NoteBook[\"Any Cpu -16 GB\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": false,
+                                  "isCustomField": false,
+                                  "accessor": "Any Cpu -16 GB",
+                                  "identifier": "Any_Cpu__16_GB",
+                                  "position": 0,
+                                  "originalIdentifier": "Any Cpu -16 GB",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Any Cpu 16 GB"
+                                },
+                                "Any_Cpu__32_GB": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NoteBook[\"Any Cpu -32 GB\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": false,
+                                  "isCustomField": false,
+                                  "accessor": "Any Cpu -32 GB",
+                                  "identifier": "Any_Cpu__32_GB",
+                                  "position": 1,
+                                  "originalIdentifier": "Any Cpu -32 GB",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Any Cpu 32 GB"
+                                },
+                                "Laptop__Intel__32_GB_DevOnly_": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NoteBook[\"Laptop (Intel -32 GB DevOnly)\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": false,
+                                  "isCustomField": false,
+                                  "accessor": "Laptop (Intel -32 GB DevOnly)",
+                                  "identifier": "Laptop__Intel__32_GB_DevOnly_",
+                                  "position": 2,
+                                  "originalIdentifier": "Laptop (Intel -32 GB DevOnly)",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Laptop Intel 32 GB Dev Only"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NoteBook))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "Any Cpu -16 GB": false,
+                                "Any Cpu -32 GB": false,
+                                "Laptop (Intel -32 GB DevOnly)": false
+                              },
+                              "isCustomField": false,
+                              "accessor": "NoteBook",
+                              "identifier": "NoteBook",
+                              "position": 0,
+                              "originalIdentifier": "NoteBook",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "cellBoxShadow": "none",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Note Book"
+                            },
+                            "monitor": {
+                              "children": {
+                                "Extended_Monitor_1": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.monitor[\"Extended Monitor 1\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": false,
+                                  "isCustomField": false,
+                                  "accessor": "Extended Monitor 1",
+                                  "identifier": "Extended_Monitor_1",
+                                  "position": 0,
+                                  "originalIdentifier": "Extended Monitor 1",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Extended Monitor 1"
+                                },
+                                "Extended_Monitor_2": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.monitor[\"Extended Monitor 2\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": false,
+                                  "isCustomField": false,
+                                  "accessor": "Extended Monitor 2",
+                                  "identifier": "Extended_Monitor_2",
+                                  "position": 1,
+                                  "originalIdentifier": "Extended Monitor 2",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Extended Monitor 2"
+                                },
+                                "Extended_Monitor_3": {
+                                  "children": {},
+                                  "dataType": "boolean",
+                                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.monitor[\"Extended Monitor 3\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "fieldType": "Switch",
+                                  "sourceData": false,
+                                  "isCustomField": false,
+                                  "accessor": "Extended Monitor 3",
+                                  "identifier": "Extended_Monitor_3",
+                                  "position": 2,
+                                  "originalIdentifier": "Extended Monitor 3",
+                                  "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                                  "boxShadow": "none",
+                                  "alignWidget": "LEFT",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "labelTextSize": "0.875rem",
+                                  "label": "Extended Monitor 3"
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.monitor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Object",
+                              "sourceData": {
+                                "Extended Monitor 1": false,
+                                "Extended Monitor 2": false,
+                                "Extended Monitor 3": false
+                              },
+                              "isCustomField": false,
+                              "accessor": "monitor",
+                              "identifier": "monitor",
+                              "position": 1,
+                              "originalIdentifier": "monitor",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "cellBoxShadow": "none",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Monitor"
+                            },
+                            "Macbook": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Macbook))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Macbook",
+                              "identifier": "Macbook",
+                              "position": 2,
+                              "originalIdentifier": "Macbook",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Macbook"
+                            },
+                            "Extended_Graphic_Monitor_2": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Extended Graphic Monitor 2\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Extended Graphic Monitor 2",
+                              "identifier": "Extended_Graphic_Monitor_2",
+                              "position": 3,
+                              "originalIdentifier": "Extended Graphic Monitor 2",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Extended Graphic Monitor 2"
+                            },
+                            "Docking_Station": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Docking Station\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Docking Station",
+                              "identifier": "Docking_Station",
+                              "position": 4,
+                              "originalIdentifier": "Docking Station",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Docking Station"
+                            },
+                            "Mouse_Keyboard": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Mouse+Keyboard\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Mouse+Keyboard",
+                              "identifier": "Mouse_Keyboard",
+                              "position": 5,
+                              "originalIdentifier": "Mouse+Keyboard",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Mouse Keyboard"
+                            },
+                            "Mobile_Phone": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Mobile Phone\"]))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Mobile Phone",
+                              "identifier": "Mobile_Phone",
+                              "position": 6,
+                              "originalIdentifier": "Mobile Phone",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Mobile Phone"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "NoteBook": {
+                              "Any Cpu -16 GB": false,
+                              "Any Cpu -32 GB": false,
+                              "Laptop (Intel -32 GB DevOnly)": false
+                            },
+                            "monitor": {
+                              "Extended Monitor 1": false,
+                              "Extended Monitor 2": false,
+                              "Extended Monitor 3": false
+                            },
+                            "Macbook": false,
+                            "Extended Graphic Monitor 2": false,
+                            "Docking Station": false,
+                            "Mouse+Keyboard": false,
+                            "Mobile Phone": false
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(Hardware.sourceData, Hardware.formData, Hardware.fieldState)}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                      "widgetName": "Hardware",
+                      "submitButtonStyles": {
+                        "buttonColor": "transparent",
+                        "borderRadius": "0px",
+                        "boxShadow": "none",
+                        "buttonVariant": "PRIMARY",
+                        "iconAlign": "left"
+                      },
+                      "borderColor": "#231f20",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children._7Zip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk_RemoteClient.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.GoogleChrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.JIRA_Software.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Gsuite.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Workplace.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_Account.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.JIRA_Software.onChange"
+                        },
+                        {
+                          "key": "showReset"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.notebook.children._32G.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.mouse.children.wired.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.mouse.children.wireless.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__16_GB.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__32_GB.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Laptop__Intel__32_GB_DevOnly_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_1.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Macbook.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Extended_Graphic_Monitor_2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Docking_Station.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mouse_Keyboard.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mobile_Phone.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook_ram_32.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook_ram_64.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor_32_n.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.keyborad.defaultValue"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "",
+                      "topRow": 15,
+                      "bottomRow": 61,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "Hardware",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 22,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "resetButtonStyles.buttonColor"
+                        },
+                        {
+                          "key": "resetButtonStyles.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.RADIO_GROUP.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.SWITCH.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.cellBorderRadius"
+                        },
+                        {
+                          "key": "sourceData"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__16_GB.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__16_GB.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__32_GB.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Any_Cpu__32_GB.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Laptop__Intel__32_GB_DevOnly_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.children.Laptop__Intel__32_GB_DevOnly_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.NoteBook.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_1.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_1.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_2.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_3.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.children.Extended_Monitor_3.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.monitor.cellBorderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Macbook.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Macbook.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Extended_Graphic_Monitor_2.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Extended_Graphic_Monitor_2.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Docking_Station.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Docking_Station.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mouse_Keyboard.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mouse_Keyboard.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mobile_Phone.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Mobile_Phone.accentColor"
+                        }
+                      ],
+                      "sourceData": "{{appsmith.store.Hardware_By_Position}}",
+                      "showReset": "false",
+                      "resetButtonLabel": "",
+                      "key": "chdvv8c09u",
+                      "backgroundColor": "#fff",
+                      "isDeprecated": false,
+                      "rightColumn": 42,
+                      "autoGenerateForm": true,
+                      "widgetId": "btppksal62",
+                      "resetButtonStyles": {
+                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "SECONDARY",
+                        "placement": "CENTER"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": false,
+                      "submitButtonLabel": "",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "#dd4b34",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 60,
+                      "dynamicBindingPathList": [],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "83zjiq1sx6",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "iconName": "cross",
+                      "widgetId": "q6mjjd0dco",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0.375rem",
+                      "buttonVariant": "SECONDARY"
+                    },
+                    {
+                      "widgetName": "Text1Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Authorize Matrix - License",
+                      "key": "ib24ormxk0",
+                      "isDeprecated": false,
+                      "rightColumn": 20,
+                      "textAlign": "LEFT",
+                      "widgetId": "pk1s7whw6i",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "MS_Office_365__License_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"MS Office 365 (License)\"]))(License.sourceData, License.formData, License.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "MS Office 365 (License)",
+                              "identifier": "MS_Office_365__License_",
+                              "position": 0,
+                              "originalIdentifier": "MS Office 365 (License)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(License.sourceData, License.formData, License.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "MS Office 365 License"
+                            },
+                            "PowerBI_Pro__License_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"PowerBI Pro (License)\"]))(License.sourceData, License.formData, License.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "PowerBI Pro (License)",
+                              "identifier": "PowerBI_Pro__License_",
+                              "position": 1,
+                              "originalIdentifier": "PowerBI Pro (License)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(License.sourceData, License.formData, License.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Power BI Pro License"
+                            },
+                            "Adobe_Photoshop__Software___License_": {
+                              "children": {},
+                              "dataType": "boolean",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Adobe Photoshop (Software & License)\"]))(License.sourceData, License.formData, License.fieldState)}}",
+                              "fieldType": "Switch",
+                              "sourceData": false,
+                              "isCustomField": false,
+                              "accessor": "Adobe Photoshop (Software & License)",
+                              "identifier": "Adobe_Photoshop__Software___License_",
+                              "position": 2,
+                              "originalIdentifier": "Adobe Photoshop (Software & License)",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(License.sourceData, License.formData, License.fieldState)}}",
+                              "boxShadow": "none",
+                              "alignWidget": "LEFT",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Adobe Photoshop Software License"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(License.sourceData, License.formData, License.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "MS Office 365 (License)": false,
+                            "PowerBI Pro (License)": false,
+                            "Adobe Photoshop (Software & License)": false
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(License.sourceData, License.formData, License.fieldState)}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(License.sourceData, License.formData, License.fieldState)}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                      "widgetName": "License",
+                      "submitButtonStyles": {
+                        "buttonColor": "transparent",
+                        "borderRadius": "0px",
+                        "boxShadow": "none",
+                        "buttonVariant": "PRIMARY",
+                        "iconAlign": "left"
+                      },
+                      "borderColor": "#ffc13d",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children._7Zip.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Anydesk_RemoteClient.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.GoogleChrome.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Dbeaver.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.JIRA_Software.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Gsuite.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Workplace.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.SAP_Account.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.JIRA_Software.onChange"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.NoteBook_ram_32.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.NoteBook_ram_64.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.monitor_32_n.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Hardware.children.keyborad.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.JIRA_Software.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.Gsuite.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.Workplace.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Software.children.SAP_Account.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.MS_Office_365__License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.PowerBI_Pro__License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Photoshop__Software___License_.defaultValue"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+                      "onSubmit": "",
+                      "topRow": 15,
+                      "bottomRow": 61,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "License",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "resetButtonStyles.buttonColor"
+                        },
+                        {
+                          "key": "resetButtonStyles.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.ARRAY.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.OBJECT.cellBorderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CHECKBOX.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.CURRENCY_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.DATEPICKER.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.EMAIL_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTISELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.MULTILINE_TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PASSWORD_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.PHONE_NUMBER_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.RADIO_GROUP.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.SELECT.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.SWITCH.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.accentColor"
+                        },
+                        {
+                          "key": "childStylesheet.TEXT_INPUT.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.cellBorderRadius"
+                        },
+                        {
+                          "key": "sourceData"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.MS_Office_365__License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.MS_Office_365__License_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.PowerBI_Pro__License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.PowerBI_Pro__License_.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Photoshop__Software___License_.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.Adobe_Photoshop__Software___License_.accentColor"
+                        }
+                      ],
+                      "borderWidth": "",
+                      "sourceData": "{{appsmith.store.License_By_Position}}",
+                      "showReset": false,
+                      "resetButtonLabel": "Closs",
+                      "key": "chdvv8c09u",
+                      "backgroundColor": "#fff",
+                      "isDeprecated": false,
+                      "rightColumn": 21,
+                      "autoGenerateForm": true,
+                      "widgetId": "8soa7mp7yo",
+                      "resetButtonStyles": {
+                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "boxShadow": "none",
+                        "buttonVariant": "SECONDARY",
+                        "placement": "CENTER"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": false,
+                      "submitButtonLabel": "",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "ButtonGroup1",
+                      "isCanvas": false,
+                      "displayName": "Button Group",
+                      "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "groupButtons": {
+                        "groupButton1": {
+                          "label": "Discard",
+                          "iconName": "key-delete",
+                          "id": "groupButton1",
+                          "widgetId": "",
+                          "buttonType": "SIMPLE",
+                          "placement": "CENTER",
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "index": 0,
+                          "menuItems": {},
+                          "buttonColor": "#ef4444"
+                        },
+                        "groupButton2": {
+                          "label": "Save Draft",
+                          "iconName": "floppy-disk",
+                          "id": "groupButton2",
+                          "buttonType": "SIMPLE",
+                          "placement": "CENTER",
+                          "widgetId": "",
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "index": 1,
+                          "menuItems": {},
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                        },
+                        "groupButton3": {
+                          "label": "Public",
+                          "iconName": "cloud-upload",
+                          "id": "groupButton3",
+                          "buttonType": "SIMPLE",
+                          "placement": "CENTER",
+                          "widgetId": "",
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "index": 2,
+                          "menuItems": {
+                            "menuItem1": {
+                              "label": "First Option",
+                              "backgroundColor": "#FFFFFF",
+                              "id": "menuItem1",
+                              "widgetId": "",
+                              "onClick": "",
+                              "isVisible": true,
+                              "isDisabled": false,
+                              "index": 0
+                            },
+                            "menuItem2": {
+                              "label": "Second Option",
+                              "backgroundColor": "#FFFFFF",
+                              "id": "menuItem2",
+                              "widgetId": "",
+                              "onClick": "",
+                              "isVisible": true,
+                              "isDisabled": false,
+                              "index": 1
+                            },
+                            "menuItem3": {
+                              "label": "Delete",
+                              "iconName": "trash",
+                              "iconColor": "#FFFFFF",
+                              "iconAlign": "right",
+                              "textColor": "#FFFFFF",
+                              "backgroundColor": "#DD4B34",
+                              "id": "menuItem3",
+                              "widgetId": "",
+                              "onClick": "",
+                              "isVisible": true,
+                              "isDisabled": false,
+                              "index": 2
+                            }
+                          },
+                          "buttonColor": "#16a34a",
+                          "iconAlign": "left"
+                        }
+                      },
+                      "type": "BUTTON_GROUP_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.4609375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 39,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.button.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.buttonColor"
+                        }
+                      ],
+                      "key": "da7o6or3fq",
+                      "orientation": "horizontal",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "1inkdscgle",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Divider1",
+                      "thickness": "2",
+                      "displayName": "Divider",
+                      "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+                      "searchTags": [
+                        "line"
+                      ],
+                      "topRow": 5,
+                      "bottomRow": 9,
+                      "parentRowSpace": 10,
+                      "type": "DIVIDER_WIDGET",
+                      "capType": "nc",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.4609375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "key": "tstlcqqtcu",
+                      "dividerColor": "#EBEBEB",
+                      "orientation": "horizontal",
+                      "strokeStyle": "solid",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "4tbse6v1bu",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "capSide": 0,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Divider2",
+                      "thickness": 2,
+                      "displayName": "Divider",
+                      "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
+                      "searchTags": [
+                        "line"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "DIVIDER_WIDGET",
+                      "capType": "nc",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.4609375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 20,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "key": "lj7wxb0ykp",
+                      "dividerColor": "#EBEBEB",
+                      "orientation": "vertical",
+                      "strokeStyle": "solid",
+                      "isDeprecated": false,
+                      "rightColumn": 22,
+                      "widgetId": "qp5031wjjg",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "capSide": 0,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 16.4609375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 22,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{'Version : '+appsmith.store.licenseKey.version}}",
+                      "key": "3lvvthdapo",
+                      "isDeprecated": false,
+                      "rightColumn": 34,
+                      "textAlign": "LEFT",
+                      "widgetId": "8n0kj59cdd",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "4v8zjluqw4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1.25rem"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "g4i5fieuku",
+                  "isDeprecated": false,
+                  "rightColumn": 430.5,
+                  "detachFromLayout": true,
+                  "widgetId": "4v8zjluqw4",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "3ha0xom3f6",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              ],
+              "key": "aumd4hkjd3",
+              "height": 636,
+              "isDeprecated": false,
+              "rightColumn": 62,
+              "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+              "detachFromLayout": true,
+              "widgetId": "3ha0xom3f6",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "onClose": "{{closeModal('Modal1')}}",
+              "borderRadius": "0.375rem",
+              "width": 1065.5
+            },
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "multiRowSelection": false,
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 5,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "cellBackground"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": "",
+              "showInlineEditingOptionDropdown": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "enableClientSideSearch": true,
+              "version": 1,
+              "textColor": "#231f20",
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "0.375rem",
+              "primaryColumnId": "Position",
+              "defaultSelectedRowIndices": "",
+              "widgetName": "TableLicense",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "id"
+              ],
+              "dynamicPropertyPathList": [],
+              "compactMode": "DEFAULT",
+              "displayName": "Table",
+              "bottomRow": 21,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "Extended_Monitor_3": 148,
+                "Position": 452,
+                "id": 159,
+                "Division": 282,
+                "division": 120,
+                "position": 288,
+                "PowerBI_Pro__License_": 189,
+                "MS_Office_365__License_": 176,
+                "Adobe_Photoshop__Software___License_": 449
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "onPageSizeChange": "",
+              "parentColumnSpace": 16.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
+              "primaryColumns": {
+                "id": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "id",
+                  "id": "id",
+                  "alias": "id",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "#231f20",
+                  "textSize": "0.875rem",
+                  "fontStyle": "BOLD",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{TableLicense.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                  "cellBackground": "#fafafa"
+                }
+              },
+              "onRowSelected": "{{showModal('Modal1')}}",
+              "key": "415oinbiox",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "o1z8608oq7",
+              "tableData": "{{appsmith.store.Authorize_Data_API_Authorize_Matrix}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": false,
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "widgetName": "Button_navigateTo_Group",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "groupButtons.groupButton2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemedl1wsn9pe.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3.menuItems.menuItem2.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemgwlh8gl2q1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemon4xdf4wgr.onClick"
+                }
+              ],
+              "displayName": "Button Group",
+              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 0,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "groupButtons": {
+                "groupButton1": {
+                  "label": "License",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "menuItems": {
+                    "menuItemon4xdf4wgr": {
+                      "id": "menuItemon4xdf4wgr",
+                      "index": 0,
+                      "label": "Software",
+                      "widgetId": "zi6f8sgi2m",
+                      "isDisabled": false,
+                      "isVisible": true,
+                      "onClick": "{{storeValue('AuthorizeData', JS_getLicenses.Software)}}"
+                    }
+                  },
+                  "buttonColor": "#002c70",
+                  "iconAlign": "left",
+                  "onClick": "{{navigateTo('PageLicense', {})}}"
+                },
+                "groupButtonpkhhi9iot4": {
+                  "id": "groupButtonpkhhi9iot4",
+                  "index": 1,
+                  "label": "Hardware",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "lml4qglzd4",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "#002c70",
+                  "onClick": "{{navigateTo('PageHardware', {})}}"
+                },
+                "groupButton3jgizw7zuo": {
+                  "id": "groupButton3jgizw7zuo",
+                  "index": 2,
+                  "label": "Software",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "cuul3azjkb",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "#002c70",
+                  "onClick": "{{navigateTo('PageSoftware', {})}}"
+                }
+              },
+              "type": "BUTTON_GROUP_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "groupButtons.groupButton1.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton1.menuItems.menuItemon4xdf4wgr.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButtonpkhhi9iot4.onClick"
+                },
+                {
+                  "key": "groupButtons.groupButton3jgizw7zuo.onClick"
+                }
+              ],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "7eixq0t0mx",
+              "orientation": "horizontal",
+              "isDeprecated": false,
+              "rightColumn": 21,
+              "widgetId": "6skecgc5e9",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "borderRadius": "0.375rem",
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "widgetName": "IconButton2",
+              "onClick": "{{JS_getLicenses.getAuthorizeMatixs()}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 0,
+              "bottomRow": 5,
+              "tooltip": "Refresh Table",
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
+              "isDisabled": false,
+              "key": "nspnkkof7x",
+              "isDeprecated": false,
+              "rightColumn": 3,
+              "iconName": "refresh",
+              "widgetId": "h7o5e3uw5k",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0.375rem",
+              "buttonVariant": "TERTIARY"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "FilePicker1",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onFilesSelected"
+                }
+              ],
+              "displayName": "FilePicker",
+              "iconSVG": "/static/media/icon.7c5ad9c357928c6ff5701bf51a56c2e5.svg",
+              "searchTags": [
+                "upload"
+              ],
+              "topRow": 36,
+              "bottomRow": 40,
+              "parentRowSpace": 10,
+              "allowedFileTypes": [],
+              "type": "FILE_PICKER_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onFilesSelected"
+                }
+              ],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "uv9939qrnn",
+              "onFilesSelected": "{{JS_storeValue.UpdateStore(FilePicker1.files)}}",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 19,
+              "isDefaultClickDisabled": true,
+              "widgetId": "81mbj8vn2y",
+              "isVisible": true,
+              "label": "Select Files",
+              "maxFileSize": 5,
+              "version": 1,
+              "fileDataType": "Base64",
+              "parentId": "0",
+              "selectedFiles": [],
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "files": [],
+              "maxNumFiles": 1
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Image1",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+              "topRow": 28,
+              "bottomRow": 73,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 23,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "image"
+                }
+              ],
+              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+              "key": "571yhfpweb",
+              "image": "{{appsmith.store.imgBB_URL}}",
+              "isDeprecated": false,
+              "rightColumn": 58,
+              "objectFit": "contain",
+              "widgetId": "6gxfwxm2wd",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "enableRotation": false
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": false,
+        "id": "PageLicense",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63282add93ead37f152bc2ca_63282add93ead37f152bc2d8"
+}

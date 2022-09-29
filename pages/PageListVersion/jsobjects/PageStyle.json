@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PageStyle",
+    "pageId": "PageListVersion",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tGetViewEditButtonBackgroundColor: function (currentRow) {\n\t\tswitch (PageLogic.TransformStatus(currentRow)) {\n\t\t\tcase PageConstant.versionStatus.active:\n\t\t\t\treturn PageConstant.style.color.versionStatus.active;\n\t\t\tcase PageConstant.versionStatus.inactive:\n\t\t\t\treturn PageConstant.style.color.versionStatus.inactive;\n\t\t\tcase PageConstant.versionStatus.draft:\n\t\t\t\treturn PageConstant.style.color.versionStatus.draft;\n\t\t\tdefault:\n\t\t\t\treturn PageConstant.style.color.versionStatus.default;\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageListVersion_PageStyle",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2ac"
+}

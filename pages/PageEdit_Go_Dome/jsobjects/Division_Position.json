@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Division_Position",
+    "pageId": "PageEdit_Go_Dome",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetDivision: async () => {\n\t\tawait API_Get_Division.run()\n\t\tawait storeValue('Data_Division', API_Get_Division.data)\n\t\tconsole.log(appsmith.store['Data_Division'])\n\t\tlet listDivision = appsmith.store.Data_Division || [];\n\t\tif(listDivision?.length > 0){\n\t\t\tlistDivision = []\n\t\t}\n\t\tfor(let i=0;i < API_Get_Division.data.length;i++){\n\t\t\tlet objectDivision = {}\n\t\t\tobjectDivision['label'] = API_Get_Division.data[i].Division\n\t\t\tobjectDivision['value'] = API_Get_Division.data[i].Division\n\t\t\tlistDivision.push(objectDivision)\n\t\t}\n\t\tstoreValue('List_Division', _.unionBy(listDivision))\n\t\tconsole.log(\"List Division :: \" + appsmith.store['List_Division'])\n\t},\n\tselectCheckPosision: (DivisionName) => {\n\t\tconsole.log(DivisionName)\n\t\tstoreValue('Division_Name', (DivisionName))\n\t\tlet filterDivision = appsmith.store.Data_Division.filter((item) => item.Division === DivisionName);\n\t\tconsole.log(filterDivision)\n\t\tconsole.log(filterDivision.length)\n\t\tif(filterDivision.length > 0){\n\t\t\tlet positionList = filterDivision[0].Position?.map((position) => position.name);\n\t\t\tlet selectPositionObject = []\n\t\t\tpositionList.forEach((name) => {\n\t\t\t\tselectPositionObject.push({\n\t\t\t\t\tlabel: name,\n\t\t\t\t\tvalue: name\n\t\t\t\t})\n\t\t\t})\n\t\t\tstoreValue('List_Position', _.unionBy(selectPositionObject))\n\t\t}else{\n\t\t\tstoreValue('List_Position', undefined)\n\t\t\tstoreValue('Position_Name', undefined)\n\t\t}\n\t},\n\tselectOption: (position) => {\n\t\tstoreValue('Position_Name', position)\n\t\tconsole.log(position)\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageEdit_Go_Dome_Division_Position",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad193ead37f152bc274"
+}

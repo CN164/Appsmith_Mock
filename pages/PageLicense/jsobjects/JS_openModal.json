@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_openModal",
+    "pageId": "PageLicense",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tstore_modal: async () => {\n\t\t//let navigation = appsmith.store[\"navigationData\"]\n\t\t//console.log(navigation)\n\t\t//if(navigation.isView === false){\n\t\tawait API_GET_AuthorizeMatrix.run()\n\t\t\t{{storeValue('licenseKey', TableLicense.selectedRow)}}\n\t\tawait JS_getAuthMatrix.getAuthorizeMatrixByPosition()\n\t\t\t{{showModal('Modal1')}}\n\t\t//}\n\t},\n\tstore_modelUpdate: async () => {\n\t\tawait storeValue('licenseUpdate', License.formData)\n\t\tawait API_PUT_License.run()\n\t\tawait JS_getLicenses.getLicenses()\n\t\tcloseModal('Modal1')\n\t},\n\tstore_clickUpdate: async (rowName, rowId, rowUpdate) => {\n\t\tawait storeValue('rowUpdate', rowUpdate)\n\t\tawait storeValue('rowId', rowId)\n\t\tif(rowUpdate === true){\n\t\t\tconst result = \"{\"+rowName+\"false\"+\"}\"\n\t\t\tstoreValue('modalUpdateLicense', result)\n\t\t\tawait API_PUT_LicenseById.run()\n\t\t\tawait JS_getLicenses.getLicenses()\n\t\t}else{\n\t\t\tconst result = \"{\"+rowName+\"true\"+\"}\"\n\t\t\tstoreValue('modalUpdateLicense', result)\n\t\t\tawait API_PUT_LicenseById.run()\n\t\t\tawait JS_getLicenses.getLicenses()\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageLicense_JS_openModal",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2b6"
+}

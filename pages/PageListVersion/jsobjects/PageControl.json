@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "PageControl",
+    "pageId": "PageListVersion",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tSortVersionList: function (data) {\n\t\treturn data.sort((a, b) => PageLogic.SortFilterVersion(a, b));\n\t},\n\tFilterVersionList: function (data) {\n\t\tlet filterVersion = appsmith.store.filterVersion;\n\t\tlet output = PageLogic.FilterDateAll(data, filterVersion);\n\t\treturn output;\n\t},\n\tPreloadVersionList: async function () {\n\t\tGetVersionList.run();\n\t\tlet data = GetVersionList.data;\n\t\tdata = this.SortVersionList(data);\n\t\tif (appsmith.store['filterVersion']) {\n\t\t\tdata = this.FilterVersionList(data);\n\t\t}\n\t\tawait storeValue(\"versionList\", data, false);\n\t},\n\tSaveFilterVersion: async function () {\n\t\tlet filterVersion = {\n\t\t\tcreateDateStart: DateCreateStart.formattedDate,\n\t\t\tcreateDateEnd: DateCreateEnd.formattedDate,\n\t\t\teffectiveDateStart: DateEffectiveStart.formattedDate,\n\t\t\teffectiveDateEnd: DateEffectiveEnd.formattedDate\n\t\t};\n\t\tstoreValue(\"filterVersion\", filterVersion, false);\n\t\tthis.PreloadVersionList();\n\t\tshowAlert('Filtering...', 'info');\n\t\tcloseModal('ModalFilter');\n\t},\n\tClearFilterVersion: async function () {\n\t\tstoreValue(\"filterVersion\", null, false);\n\t\tthis.PreloadVersionList();\n\t\tshowAlert('Clearing filter...', 'success')\n\t\tresetWidget(\"ModalFilter\");\n\t},\n\tSaveNavigationData: async function (triggerRowIndex) {\n\t\tawait GetAuthorizationMatrix.run();\n\t\tlet versionListData = GetAuthorizationMatrix.data;\n\t\tlet navigationData = {\n\t\t\tisView: GetVersionList.data[triggerRowIndex]['is_final'],\n\t\t\tnavigateVersion: {\n\t\t\t\tversionNumber: appsmith.store.versionList[triggerRowIndex].version_number,\n\t\t\t\tdata: versionListData.filter((item) => item.version === appsmith.store.versionList[triggerRowIndex].version_number)[0].authorizeMatrix,\n\t\t\t}\n\t\t};\n\t\tconsole.log(navigationData);\n\t\tstoreValue(\"navigationData\", navigationData, true);\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageListVersion_PageControl",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2a9"
+}

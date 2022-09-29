@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_getHardware",
+    "pageId": "PageHardware",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetHardware: async () => {\n\tawait API_GET_Hardware.run()\n\tawait storeValue('Authorize_Data_API_Hardware', API_GET_Hardware.data)\n\t},\n\tgetHardwareVersion1: async () => {\n\t\tlet DataHardware = appsmith.store.Authorize_Data_API_Hardware_NTBX || [];\n\t\tif(DataHardware?.length > 0){\n\t\t\tDataHardware = []\n\t\t}\n\t\tawait API_GET_Hardware_NTBX.run()\n\t\tawait storeValue('Data_API_Hardware_NTBX', API_GET_Hardware_NTBX.data)\n\t\tawait storeValue('Authorize_Data_API_Hardware_NTBX', undefined)\n\t\tfor(let i=0;i < API_GET_Hardware_NTBX.data.length;i++){\n\t\t\tif(API_GET_Hardware_NTBX.data[i].version_id === 1) {\n\t\t\t\tDataHardware?.push(API_GET_Hardware_NTBX.data[i])\n\t\t\t\tstoreValue('Authorize_Data_API_Hardware_NTBX', _.unionBy(DataHardware))\n\t\t\t}else {\n\t\t\t\tconsole.log('not found!!')\n\t\t\t}\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "PageHardware_JS_getHardware",
+  "deleted": false,
+  "gitSyncId": "63282acf93ead37f152bc1d2_63282ad293ead37f152bc2be"
+}
