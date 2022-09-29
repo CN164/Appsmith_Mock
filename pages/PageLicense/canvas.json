@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1240,
+          "bottomRow": 890,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -3078,14 +3078,14 @@
               "widgetName": "MenuButton1",
               "displayName": "Menu Button",
               "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-              "topRow": 44,
-              "bottomRow": 48,
+              "topRow": 41,
+              "bottomRow": 45,
               "parentRowSpace": 10,
               "type": "MENU_BUTTON_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
-              "leftColumn": 4,
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "menuColor"
@@ -3097,7 +3097,7 @@
               "isDisabled": false,
               "key": "44ew0en3m0",
               "isDeprecated": false,
-              "rightColumn": 20,
+              "rightColumn": 18,
               "menuVariant": "PRIMARY",
               "widgetId": "rnhlvm72ey",
               "menuItems": {
@@ -3142,14 +3142,14 @@
               "widgetName": "MenuButton2",
               "displayName": "Menu Button",
               "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
-              "topRow": 49,
-              "bottomRow": 53,
+              "topRow": 46,
+              "bottomRow": 50,
               "parentRowSpace": 10,
               "type": "MENU_BUTTON_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
-              "leftColumn": 5,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "menuColor"
@@ -3161,7 +3161,7 @@
               "isDisabled": false,
               "key": "44ew0en3m0",
               "isDeprecated": false,
-              "rightColumn": 21,
+              "rightColumn": 17,
               "menuVariant": "PRIMARY",
               "widgetId": "uta41o64cu",
               "menuItems": {
