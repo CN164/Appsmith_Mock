@@ -1,4 +1,4 @@
-# Appsmith_Mock ---- test
+# Appsmith_Mock
 Test
 ![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
 
